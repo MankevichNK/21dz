@@ -13,9 +13,11 @@
 		59014FA0243DD22B00F09AE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59014F9E243DD22B00F09AE4 /* Main.storyboard */; };
 		59014FA2243DD23100F09AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59014FA1243DD23100F09AE4 /* Assets.xcassets */; };
 		59014FA5243DD23100F09AE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59014FA3243DD23100F09AE4 /* LaunchScreen.storyboard */; };
+		F3E682437A022B47BA8CC211 /* Pods_21dz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96383D215DC003F178394A9 /* Pods_21dz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		391F9DE5A64FDB7A69A6DC90 /* Pods-21dz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-21dz.debug.xcconfig"; path = "Target Support Files/Pods-21dz/Pods-21dz.debug.xcconfig"; sourceTree = "<group>"; };
 		59014F95243DD22B00F09AE4 /* 21dz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21dz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59014F98243DD22B00F09AE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59014F9A243DD22B00F09AE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		59014FA1243DD23100F09AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59014FA4243DD23100F09AE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59014FA6243DD23100F09AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0846F617EB28F021C1C799 /* Pods-21dz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-21dz.release.xcconfig"; path = "Target Support Files/Pods-21dz/Pods-21dz.release.xcconfig"; sourceTree = "<group>"; };
+		D96383D215DC003F178394A9 /* Pods_21dz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_21dz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E682437A022B47BA8CC211 /* Pods_21dz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				59014F97243DD22B00F09AE4 /* 21dz */,
 				59014F96243DD22B00F09AE4 /* Products */,
+				C7314C949FE62727E0A14F24 /* Pods */,
+				C47CD147A11FF5462C12C048 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = 21dz;
 			sourceTree = "<group>";
 		};
+		C47CD147A11FF5462C12C048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D96383D215DC003F178394A9 /* Pods_21dz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7314C949FE62727E0A14F24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				391F9DE5A64FDB7A69A6DC90 /* Pods-21dz.debug.xcconfig */,
+				7A0846F617EB28F021C1C799 /* Pods-21dz.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59014FA9243DD23100F09AE4 /* Build configuration list for PBXNativeTarget "21dz" */;
 			buildPhases = (
+				40474C36ED24A66BBD52F6FC /* [CP] Check Pods Manifest.lock */,
 				59014F91243DD22B00F09AE4 /* Sources */,
 				59014F92243DD22B00F09AE4 /* Frameworks */,
 				59014F93243DD22B00F09AE4 /* Resources */,
+				E87E0AA816BC1BC23B0621F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40474C36ED24A66BBD52F6FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-21dz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87E0AA816BC1BC23B0621F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-21dz/Pods-21dz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-21dz/Pods-21dz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-21dz/Pods-21dz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59014F91243DD22B00F09AE4 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		59014FAA243DD23100F09AE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391F9DE5A64FDB7A69A6DC90 /* Pods-21dz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		59014FAB243DD23100F09AE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0846F617EB28F021C1C799 /* Pods-21dz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
